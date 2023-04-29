@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import BalanceForm from './components/BalanceForm';
-import { render } from 'react-dom';
-
+import EthValue from './components/EthValue';
+import Navbar from './components/Navbar';
 
 function App() {
+  const [activeTab, setActiveTab] = useState('balance');
+
+  const handleTabChange = (tab) => {
+    setActiveTab(tab);
+  };
+
   return (
     <div>
-      <h1>Ethereum Transaction Viewer</h1>
-      <BalanceForm />
+      <Navbar activeTab={activeTab} handleTabChange={handleTabChange} />
+      {activeTab === 'balance' ? <BalanceForm /> : <EthValue />}
     </div>
   );
 }
-
-render(<App />, document.getElementById('root'));
 
 export default App;

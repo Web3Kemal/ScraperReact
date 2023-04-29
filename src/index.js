@@ -8,8 +8,9 @@ import BalanceForm from './components/BalanceForm';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BalanceForm />
-  </React.StrictMode>
+    <App />
+  </React.StrictMode>,
+  
 );
 
 
