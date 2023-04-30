@@ -13,24 +13,20 @@ function Navbar(props) {
 
   return (
     <nav>
-      <ul>
-        <li>
-          <button
-            className={activeTab === 'balance' ? 'active' : ''}
-            onClick={handleBalanceClick}
-          >
-            Check Balance
-          </button>
-        </li>
-        <li>
-          <button
-            className={activeTab === 'ethValue' ? 'active' : ''}
-            onClick={handleEthValueClick}
-          >
-            Check ETH Value
-          </button>
-        </li>
-      </ul>
+      <div className="navbar-container">
+        <button
+          className={activeTab === 'balance' ? 'active' : ''}
+          onClick={handleBalanceClick}
+        >
+          Check Balance
+        </button>
+        <button
+          className={activeTab === 'ethValue' ? 'active' : ''}
+          onClick={handleEthValueClick}
+        >
+          Check ETH Value
+        </button>
+      </div>
     </nav>
   );
 }
