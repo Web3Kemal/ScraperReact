@@ -4,19 +4,43 @@
     <title>Ethereum Transaction Data</title>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.ethvalue.com/ethvalue.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <h1>Ethereum Transaction Data</h1>
     <form>
       <label for="address">Wallet Address:</label>
-      <input type="text" id="address" name="address" placeholder="Enter Ethereum wallet address" required>
-      <br><br>
+      <input
+        type="text"
+        id="address"
+        name="address"
+        placeholder="Enter Ethereum wallet address"
+        required
+      />
+      <br /><br />
       <label for="start-block">Start Block:</label>
-      <input type="number" id="start-block" name="start-block" placeholder="Enter start block number" required>
-      <br><br>
+      <input
+        type="number"
+        id="start-block"
+        name="start-block"
+        placeholder="Enter start block number"
+        required
+      />
+      <br /><br />
       <label for="end-block">End Block:</label>
-      <input type="number" id="end-block" name="end-block" placeholder="Enter end block number" required>
-      <br><br>
+      <input
+        type="number"
+        id="end-block"
+        name="end-block"
+        placeholder="Enter end block number"
+        required
+      />
+      <br /><br />
       <button type="submit" id="submit-button">Submit</button>
     </form>
     <div id="transaction-data"></div>
